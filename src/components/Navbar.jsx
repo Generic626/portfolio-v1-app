@@ -51,7 +51,7 @@ const Navbar = () => {
         className={
           displayMobile
             ? "absolute w-full px-8 pt-[96px] bg-gray-200 h-screen flex flex-col items-center visible duration-300"
-            : "invisible"
+            : "invisible "
         }
       >
         <li
@@ -85,6 +85,20 @@ const Navbar = () => {
           <Link to="contact" smooth duration={600}>
             Contact
           </Link>
+        </li>
+        <li>
+          {/* Mobile Social Icons  */}
+          <div className="flex items-center justify-between w-full">
+            <div className="p-4">
+              <FaGithub size={30} />
+            </div>
+            <div className="p-4">
+              <HiOutlineMail size={30} />
+            </div>
+            <div className="p-4">
+              <BsFillPersonLinesFill size={30} />
+            </div>
+          </div>
         </li>
       </ul>
       {/* Social Icons  */}

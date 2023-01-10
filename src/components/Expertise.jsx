@@ -25,7 +25,7 @@ const Expertise = () => {
   return (
     <div
       name="expertise"
-      className="w-full h-full bg-black bg-code bg-cover md:py-24"
+      className="w-full h-full bg-black bg-code bg-cover md:py-24 bg-center"
     >
       {/* Container  */}
       <div className="max-w-[1200px] flex flex-col justify-center items-center m-auto">
@@ -38,7 +38,9 @@ const Expertise = () => {
         {/* Cards List */}
         <div className="grid grid-cols-2 md:grid-cols-4 py-16 gap-4 w-full px-8">
           {techUsed.map((tech) => {
-            return <ExpertiseCards img={tech.img} text={tech.text} />;
+            return (
+              <ExpertiseCards img={tech.img} text={tech.text} key={tech.text} />
+            );
           })}
         </div>
       </div>

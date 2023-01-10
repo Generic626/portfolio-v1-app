@@ -3,7 +3,10 @@ import avatarImg from "../assets/avatar.png";
 
 const About = () => {
   return (
-    <div name="about" className="w-full bg-gray-200 px-4 ">
+    <div
+      name="about"
+      className="w-full bg-gray-200 px-4 flex justify-center items-center"
+    >
       {/* Container  */}
       <div>
         {/* Grid */}
