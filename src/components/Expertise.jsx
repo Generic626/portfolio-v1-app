@@ -25,14 +25,14 @@ const Expertise = () => {
   return (
     <div
       name="expertise"
-      className="w-full h-full bg-black bg-code bg-cover md:py-24 bg-center"
+      className="w-full h-full bg-black bg-code bg-cover md:pt-10 md:pb-24 bg-center"
     >
       {/* Container  */}
       <div className="max-w-[1200px] flex flex-col justify-center items-center m-auto">
         {/* Title  */}
         <div className="mt-32  text-white  text-center border-white flex justify-center items-center bg-[#0a192f] h-auto duration-300">
           <h1 className="text-2xl border p-4 w-[350px] md:w-[400px]">
-            Technologies that I have used
+            Technologies that I have used before
           </h1>
         </div>
         {/* Cards List */}

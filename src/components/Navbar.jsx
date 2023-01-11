@@ -14,8 +14,8 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] shadow-xl bg-gray-200 z-10">
       <div className="flex justify-between items-center px-4 w-full h-full">
         {/* Logo  */}
-        <p className="font-bold text-2xl border-2 border-gray-500 w-[180px] text-center p-2 ">
-          PORTFOLIO.
+        <p className="font-bold text-md sm:text-2xl border-2 border-gray-500 sm:w-[250px] text-center p-2 ">
+          MY PORTFOLIO.
         </p>
         {/* Desktop Nav Items  */}
         <ul className="hidden sm:flex">
@@ -54,35 +54,41 @@ const Navbar = () => {
             : "invisible "
         }
       >
-        <li
-          className="my-8 text-xl border-b-[1px] hover:border-gray-400 px-0 uppercase pb-2"
-          onClick={handleClick}
-        >
-          <Link to="hero" smooth duration={600}>
+        <li className="my-8 text-xl border-b-[1px] hover:border-gray-400 px-0 uppercase pb-2">
+          <Link to="hero" smooth duration={600} onClick={handleClick}>
             Home
           </Link>
         </li>
-        <li
-          className="my-8 text-xl border-b-[1px] hover:border-gray-400 px-0 uppercase pb-2"
-          onClick={handleClick}
-        >
-          <Link to="about" smooth offset={-80} duration={600}>
+        <li className="my-8 text-xl  px-0 uppercase pb-2">
+          <Link
+            to="about"
+            smooth
+            offset={-80}
+            duration={600}
+            onClick={handleClick}
+          >
             About
           </Link>
         </li>
-        <li
-          className="my-8 text-xl border-b-[1px] hover:border-gray-400 px-0 uppercase pb-2"
-          onClick={handleClick}
-        >
-          <Link to="expertise" smooth offset={-70} duration={600}>
+        <li className="my-8 text-xl  px-0 uppercase pb-2">
+          <Link
+            to="expertise"
+            smooth
+            offset={-70}
+            duration={600}
+            onClick={handleClick}
+          >
             Expertise
           </Link>
         </li>
-        <li
-          className="my-8 text-xl border-b-[1px] hover:border-gray-400 px-0 uppercase pb-2"
-          onClick={handleClick}
-        >
-          <Link to="contact" smooth duration={600}>
+        <li className="my-8 text-xl  px-0 uppercase pb-2">
+          <Link
+            to="contact"
+            smooth
+            offset={-70}
+            duration={600}
+            onClick={handleClick}
+          >
             Contact
           </Link>
         </li>
@@ -90,7 +96,13 @@ const Navbar = () => {
           {/* Mobile Social Icons  */}
           <div className="flex items-center justify-between w-full">
             <div className="p-4">
-              <FaGithub size={30} />
+              <a
+                href="https://github.com/Generic626"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub size={30} />
+              </a>
             </div>
             <div className="p-4">
               <HiOutlineMail size={30} />
@@ -108,7 +120,14 @@ const Navbar = () => {
             className="bg-black text-white p-4 my-4 flex items-center justify-between w-[150px]
           ml-[-90px] hover:ml-[-10px] hover:bg-indigo-500 duration-300 border border-gray-400 hover:border-transparent"
           >
-            Github <FaGithub size={30} />
+            <a
+              href="https://github.com/Generic626"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+            <FaGithub size={30} />
           </li>
           <li
             className="bg-gray-500 text-white p-4 my-4 flex items-center justify-between w-[150px]

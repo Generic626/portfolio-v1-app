@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply font-[Raleway] m-0;
+    @apply font-[Raleway] m-0 bg-[#0a192f];
   }
 
   li {
