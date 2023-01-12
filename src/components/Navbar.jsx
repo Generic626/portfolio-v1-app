@@ -51,7 +51,7 @@ const Navbar = () => {
         className={
           displayMobile
             ? "absolute w-full px-8 pt-[96px] bg-gray-200 h-screen flex flex-col items-center visible duration-300"
-            : "invisible "
+            : "invisible"
         }
       >
         <li className="my-8 text-xl border-b-[1px] hover:border-gray-400 px-0 uppercase pb-2">

@@ -25,7 +25,7 @@ const Expertise = () => {
   return (
     <div
       name="expertise"
-      className="w-full h-full bg-black bg-code bg-cover md:pt-10 md:pb-24 bg-center"
+      className="w-full h-full bg-code bg-cover md:pt-10 md:pb-24 bg-center"
     >
       {/* Container  */}
       <div className="max-w-[1200px] flex flex-col justify-center items-center m-auto">

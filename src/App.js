@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Expertise from "./components/Expertise";
+import Expertise from "./components/Expertise-v2";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
